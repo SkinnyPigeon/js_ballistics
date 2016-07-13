@@ -21,7 +21,11 @@ describe( 'Ballistics Tests', function() {
   })
 
   it( 'Height', function() {
-    assert.equal( 57.2, missile.height( 43.3, 8.8) );
+    assert.equal( 38.4, missile.height( 43.3, 1) );
+  })
+
+  it( 'Pythag', function() {
+    assert.equal( 41.8, missile.pythag( 25, 33.5 ) );
   }) 
 
 })

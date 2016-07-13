@@ -25,14 +25,13 @@ var missile = {
   height: function( speed, time ) {
 
     var answer = ( speed * time ) - ( 0.5 * this.gravity * time * time )
-
-
-
-    // var sum = this.gravity * time;
-
-    // var answer = ( ( speed * time ) - ( time * this.gravity ) );
-    // console.log( speed * time )
     return answer;
+  },
+
+  pythag: function( distance, height ) {
+    var answer = Math.hypot( distance, height )
+    return Math.round( answer * 100 ) / 100;
+    return
   }
 
 
