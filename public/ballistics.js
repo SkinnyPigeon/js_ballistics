@@ -1,4 +1,4 @@
-var degrees = Math.PI /180
+var degrees = Math.PI / 180
 
 var missile = {
   welcome: function() {
@@ -31,8 +31,26 @@ var missile = {
   pythag: function( distance, height ) {
     var answer = Math.hypot( distance, height )
     return Math.round( answer * 100 ) / 100;
-    return
-  }
+  },
+
+  // angleCalcOA: function( height, distance ) {
+  //   var fraction = height / distance;
+  //   console.log( fraction )
+  //   // var sum = fraction * degrees
+  //   // console.log( sum )
+  //   var answer = Math.atan( fraction )
+    
+  //   return Math.round( answer * 100 ) / 100;
+  // }
+
+
+  // def angle_calc_o_a( height , distance )
+  //   fraction =  height / distance
+  //   # binding.pry
+  //   answer = Math::atan( fraction ) 
+  //   answer *= 180 / Math::PI
+  //   answer.round( 2 )
+  // end
 
 
 

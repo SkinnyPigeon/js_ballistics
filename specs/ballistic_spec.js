@@ -26,6 +26,10 @@ describe( 'Ballistics Tests', function() {
 
   it( 'Pythag', function() {
     assert.equal( 41.8, missile.pythag( 25, 33.5 ) );
+  })
+
+  it( 'Angle Tan', function() {
+    assert.equal( 53.27, missile.angleCalcOA( 33.5, 25 ) );
   }) 
 
 })
