@@ -1,5 +1,5 @@
 var assert = require( 'assert' );
-var Missile = require( '../public/ballistics' );
+var Missile = require( './ballistics' );
 
 describe( 'Link Test', function(){
   beforeEach( function() {
