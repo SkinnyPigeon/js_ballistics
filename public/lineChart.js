@@ -1,36 +1,49 @@
-var LineChart = function() {
+var LineChart = function( heights, distances ) {
 
   var container = document.getElementById( "lineChart");
 
   var chart = new Highcharts.Chart({
 
     chart: {
-      type: 'line',
-      renderTo: container
+      type: 'scatter',
+      renderTo: container,
+      backgroundColor: "#000066"
+    },
+
+    plotOptions: {
+      series: {
+        lineWidth: 1,
+        shadow: "yellow"
+      }
     },
 
     title: {
-      text: "Number of Pokemon I've Killed"
+      text: "Ballistics Test",
+      style: {
+        display: "none"
+      }
     },
 
-    series: [
-
-    {
-      name: "Water Pokemon",
-      color: "#73b7ff",
-      data: [ 2, 7, 10, 12, 14 ]
-    
-    },
-    {
-      name: "Fire Pokemon",
-      color: "#ffac33",
-      data: [ 4, 3, 5, 18, 11 ]
-    }
-    ],
+    series: heights,
 
     xAxis: {
-      categories: ["Jan", "Feb", "Mar", "Apr", "May"]
-    }
+      categories: distances,
+      visible: false
+    },
+
+    yAxis: {
+      visible: false
+    },
+
+    credits: {
+      enabled: false
+    },
+
+    legend: {
+      enabled: false
+    },
+
+
 
     
 
