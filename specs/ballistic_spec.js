@@ -1,7 +1,10 @@
 var assert = require( 'assert' );
-var missile = require( './ballistics' );
+var Missile = require( '../public/ballistics' );
 
 describe( 'Link Test', function(){
+  beforeEach( function() {
+    missile = new Missile()
+  })
   it( 'Say hello', function() { 
     assert.equal( "Hello Master", missile.welcome() );
   })

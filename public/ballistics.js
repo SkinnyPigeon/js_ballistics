@@ -1,6 +1,6 @@
 var degrees = Math.PI / 180
 
-var missile = {
+var Missile = {
   welcome: function() {
     return "Hello Master";
   },
@@ -57,4 +57,4 @@ var missile = {
 }
 
 
-module.exports = missile;
+module.exports = Missile;
